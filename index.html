@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ფურნე — ღამის საცხობი</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,800;1,9..144,500&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="nav" id="nav">
+      <div class="container nav-inner">
+        <a href="#top" class="logo">ფურნე<span class="dot">.</span></a>
+        <nav class="nav-links" aria-label="მთავარი ნავიგაცია">
+          <a href="#schedule">განრიგი</a>
+          <a href="#menu">მენიუ</a>
+          <a href="#story">ისტორია</a>
+          <a href="#visit">მდებარეობა</a>
+        </nav>
+        <button
+          class="burger"
+          id="burger"
+          aria-label="მენიუს გახსნა"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <nav class="mobile-menu" id="mobileMenu" aria-label="მობილური ნავიგაცია">
+      <a href="#schedule"><span>01</span>განრიგი</a>
+      <a href="#menu"><span>02</span>მენიუ</a>
+      <a href="#story"><span>03</span>ისტორია</a>
+      <a href="#visit"><span>04</span>მდებარეობა</a>
+    </nav>
+
+    <section class="hero" id="top">
+      <div class="embers" aria-hidden="true">
+        <span></span><span></span><span></span><span></span> <span></span
+        ><span></span><span></span><span></span>
+      </div>
+      <div class="container hero-inner">
+        <p class="eyebrow">ღამის საცხობი — თბილისი</p>
+        <h1 class="hero-title">
+          ღამით გამომცხვარი.<br /><em>დილით — ცხელი.</em>
+        </h1>
+        <p class="hero-sub">
+          ჩვენ ვაცხობთ მაშინ, როცა ქალაქს ძინავს — ფრანგული ტექნიკა და ქართული
+          გემო ერთ ცომში ერთიანდება.
+        </p>
+        <div class="hero-cta">
+          <a href="#menu" class="btn btn-primary">მენიუს ნახვა</a>
+          <a href="#visit" class="btn btn-ghost">სად ვართ</a>
+        </div>
+      </div>
+      <p class="scroll-hint">ასქროლეთ</p>
+    </section>
+
+    <section class="schedule" id="schedule">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">ერთი ღამის გზა</p>
+          <h2>საათები, რომლებზეც ვდგავართ</h2>
+          <p>
+            ყოველი ცხობა იწყება წინა დღის საღამოს. ოთხი ნაბიჯი, ერთი ღამე, ერთი
+            ცომი.
+          </p>
+        </div>
+
+        <ol class="timeline" data-reveal>
+          <li tabindex="0">
+            <time>22:00</time>
+            <h3>ცომის შეზელა</h3>
+            <p>
+              ფქვილი, წყალი, მარილი და საფუარი ერთიანდება — იწყება ნელი, ცივი
+              ფერმენტაცია.
+            </p>
+          </li>
+          <li tabindex="0">
+            <time>01:30</time>
+            <h3>ფორმირება</h3>
+            <p>
+              ცომი იყოფა და ხელით ფორმირდება — თითო პურს ენიჭება საკუთარი
+              ხასიათი.
+            </p>
+          </li>
+          <li tabindex="0">
+            <time>05:00</time>
+            <h3>გამოცხობა</h3>
+            <p>ღუმელი 250°-ს აღწევს — ცომი ქერქად და სუნად იქცევა.</p>
+          </li>
+          <li tabindex="0">
+            <time>07:00</time>
+            <h3>კარის გაღება</h3>
+            <p>ცხელი პურის სუნი პირველად გადის ქუჩაში — და ჩვენ ვხსნით კარს.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= MENU ================= -->
+    <section class="menu" id="menu">
+      <div class="container">
+        <div class="menu-intro" data-reveal>
+          <div class="section-head" style="margin-bottom: 0">
+            <p class="eyebrow">ყოველდღიური ასორტიმენტი</p>
+            <h2>მენიუ</h2>
+            <p>
+              ექვსი რამ, რასაც ყოველდღე ვაცხობთ — ხშირად ნაკლები, ზოგჯერ მეტი,
+              არასდროს იგივე.
+            </p>
+          </div>
+        </div>
+
+        <div class="menu-grid">
+          <article class="card" data-reveal>
+            <div class="card-icon">
+              <svg viewBox="0 0 48 24">
+                <path
+                  d="M4 12c0-4 4-7 10-7h20c6 0 10 3 10 7s-4 7-10 7H14C8 19 4 16 4 12Z"
+                />
+                <path d="M14 7l3 10M22 6l3 12M30 7l3 10" />
+              </svg>
+            </div>
+            <h3>ფრანგული ბაგეტი</h3>
+            <p>ხრაშუნა ქერქი, ღია ნაკეცები, 70% ჰიდრატაცია.</p>
+            <div class="card-foot">
+              <span class="eyebrow" style="margin: 0">ყოველდღე</span
+              ><span class="card-price">5 ₾</span>
+            </div>
+          </article>
+
+          <article class="card" data-reveal>
+            <div class="card-icon">
+              <svg viewBox="0 0 48 32">
+                <path
+                  d="M6 26c0-12 10-20 22-20 6 0 12 3 14 7-4-1-9 0-12 3-5 5-6 12-3 17-9 1-21-1-21-7Z"
+                />
+                <path d="M14 18c3-4 8-7 13-8M16 22c4-3 9-5 14-6" />
+              </svg>
+            </div>
+            <h3>კრუასანი</h3>
+            <p>ხორცისფერი ფენები, ფრანგული კარაქი, 18 შრე.</p>
+            <div class="card-foot">
+              <span class="eyebrow" style="margin: 0">ახალი</span
+              ><span class="card-price">6 ₾</span>
+            </div>
+          </article>
+
+          <article class="card" data-reveal>
+            <div class="card-icon">
+              <svg viewBox="0 0 40 40">
+                <path
+                  d="M6 22c0-9 7-16 14-16s14 7 14 16-7 12-14 12S6 31 6 22Z"
+                />
+                <path d="M12 14l16 16M20 9l13 13" stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3>სოურდოუ</h3>
+            <p>24-საათიანი ცივი ფერმენტაცია, ხასხასა ნაჭდევები.</p>
+            <div class="card-foot">
+              <span class="eyebrow" style="margin: 0">ცომი</span
+              ><span class="card-price">9 ₾</span>
+            </div>
+          </article>
+
+          <article class="card" data-reveal>
+            <div class="card-icon">
+              <svg viewBox="0 0 48 24">
+                <path d="M4 13c4-7 8 7 12 0s8-7 12 0 8 7 12 0 8-7 12 0" />
+                <path
+                  d="M4 17c4-7 8 7 12 0s8-7 12 0 8 7 12 0 8-7 12 0"
+                  opacity=".45"
+                />
+              </svg>
+            </div>
+            <h3>ნაზუქი</h3>
+            <p>ქართული სადღესასწაულო ცომეული — ანისი, ვანილი, ნაზი ნაკეცები.</p>
+            <div class="card-foot">
+              <span class="eyebrow" style="margin: 0">სადღესასწაულო</span
+              ><span class="card-price">12 ₾</span>
+            </div>
+          </article>
+
+          <article class="card" data-reveal>
+            <div class="card-icon">
+              <svg viewBox="0 0 40 40">
+                <circle cx="20" cy="20" r="14" />
+                <path
+                  d="M20 6v28M6 20h28M9.5 9.5l21 21M30.5 9.5l-21 21"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3>ციტრუსის ტარტი</h3>
+            <p>ლიმონის კრემი, მსხვილფეხა ნაჭდევებიანი ცომი.</p>
+            <div class="card-foot">
+              <span class="eyebrow" style="margin: 0">დესერტი</span
+              ><span class="card-price">8 ₾</span>
+            </div>
+          </article>
+
+          <article class="card" data-reveal>
+            <div class="card-icon">
+              <svg viewBox="0 0 40 40">
+                <path
+                  d="M20 6a14 14 0 1 0 9.9 23.9 10 10 0 1 1-7-17 6 6 0 1 0-5 9.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3>შავი შოკოლადის რულეტი</h3>
+            <p>ბელგიური კაკაო, ზეთისხილის ზეთი, ზუმორო მარილი.</p>
+            <div class="card-foot">
+              <span class="eyebrow" style="margin: 0">დესერტი</span
+              ><span class="card-price">7 ₾</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STORY ================= -->
+    <section class="story" id="story">
+      <div class="container story-grid">
+        <div data-reveal>
+          <p class="eyebrow">ისტორია</p>
+          <h2
+            style="
+              font-family: var(--font-display);
+              font-weight: 600;
+              font-size: clamp(2.1rem, 5.5vw, 3.4rem);
+              margin: 0.6rem 0 1.6rem;
+              line-height: 1.1;
+            "
+          >
+            რატომ ღამით?
+          </h2>
+          <p>
+            ყველაფერი დაიწყო ერთ პატარა სამზარეულოში, სადაც ცომი არასდროს
+            ითვალისწინებდა განრიგს — ის ემზადება მაშინ, როცა მზადაა, ხშირად
+            შუაღამისას.
+          </p>
+          <p>
+            ჩვენ გადავწყვიტეთ, არ შევცვალოთ ცომის რიტმი — შევცვალოთ ჩვენი. ასე
+            გავხდით ღამის საცხობი: ადგილი, სადაც სანამ ქალაქს სძინავს, ცომი
+            ცხოვრობს.
+          </p>
+          <p>
+            დღეს, ყოველი დილით, კარები იხსნება ხელით გამომცხვარი პურით — ისეთით,
+            რომლის ისტორია წინა საღამოს იწყება.
+          </p>
+        </div>
+        <div class="story-quote" data-reveal>
+          <blockquote>პური არ ჯერდება საათს — საათი ეგუება პურს.</blockquote>
+          <cite>ფურნეს ფილოსოფია</cite>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= VISIT ================= -->
+    <section class="visit" id="visit">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">მდებარეობა და საათები</p>
+          <h2>სად ვართ</h2>
+        </div>
+        <div class="visit-grid" data-reveal>
+          <div class="visit-block">
+            <h3>მისამართი</h3>
+            <address>თბილისი, ვერის ქუჩა 14<br />0162, საქართველო</address>
+            <a class="visit-link" href="#">რუკაზე ნახვა →</a>
+          </div>
+          <div class="visit-block">
+            <h3>საათები</h3>
+            <div class="visit-row">
+              <span>ორშ – პარ</span><span>07:00–19:00</span>
+            </div>
+            <div class="visit-row">
+              <span>შაბ – კვ</span><span>08:00–17:00</span>
+            </div>
+            <div class="visit-row">
+              <span>ცხელი პური</span><span>07:00-დან</span>
+            </div>
+          </div>
+          <div class="visit-block">
+            <h3>კონტაქტი</h3>
+            <p>+995 32 200 00 00<br />hello@furne.ge</p>
+            <a class="visit-link" href="#">@furne.tbilisi →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="#top" class="logo">ფურნე<span class="dot">.</span></a>
+            <p>
+              ღამის საცხობი თბილისში — ფრანგული ტექნიკა, ქართული გემო, ხელით
+              ნაცხობი ყოველდღე.
+            </p>
+          </div>
+          <div class="footer-cols">
+            <div class="footer-col">
+              <h4>ნავიგაცია</h4>
+              <a href="#schedule">განრიგი</a>
+              <a href="#menu">მენიუ</a>
+              <a href="#story">ისტორია</a>
+              <a href="#visit">მდებარეობა</a>
+            </div>
+            <div class="footer-col">
+              <h4>გვითვალისწინეთ</h4>
+              <a href="#">Instagram</a>
+              <a href="#">Facebook</a>
+              <a href="#">TikTok</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 ფურნე. ყველა უფლება დაცულია.</span>
+          <span>გამოცხობა იწყება 22:00-ზე</span>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
