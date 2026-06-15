@@ -4,11 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ფურნე — ღამის საცხობი</title>
+
+    <meta
+      name="description"
+      content="ფურნე — ღამის საცხობი თბილისში. ფრანგული ტექნიკა და ქართული გემო ერთ ცომში: ბაგეტი, კრუასანი, სოურდოუ და ყოველდღიური ცხელი პური."
+    />
+    <meta
+      name="keywords"
+      content="საცხობი, თბილისი, პური, ბაგეტი, კრუასანი, სოურდოუ, ნაზუქი, ღამის საცხობი, ხელნაკეთი პური"
+    />
+    <meta name="author" content="ფურნე" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ფურნე — ღამის საცხობი" />
+    <meta
+      property="og:description"
+      content="ჩვენ ვაცხობთ მაშინ, როცა ქალაქს ძინავს — ფრანგული ტექნიკა და ქართული გემო ერთ ცომში ერთიანდება."
+    />
+    <meta property="og:image" content="./assets/og-image.jpg" />
+    <meta property="og:url" content="https://furne.ge/" />
+    <meta property="og:locale" content="ka_GE" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,800;1,9..144,500&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -108,7 +133,7 @@
       </div>
     </section>
 
-    <!-- ================= MENU ================= -->
+   
     <section class="menu" id="menu">
       <div class="container">
         <div class="menu-intro" data-reveal>
@@ -230,7 +255,6 @@
       </div>
     </section>
 
-    <!-- ================= STORY ================= -->
     <section class="story" id="story">
       <div class="container story-grid">
         <div data-reveal>
@@ -252,13 +276,12 @@
           </p>
         </div>
         <div class="story-quote" data-reveal>
-          <blockquote>პური არ ჯერდება საათს — საათი ეგუება პურს.</blockquote>
-          <cite>ფურნეს ფილოსოფია</cite>
+          <h2>პური არ ჯერდება საათს — საათი ეგუება პურს.</h2>
+          <p>ფურნეს ფილოსოფია</p>
         </div>
       </div>
     </section>
 
-    <!-- ================= VISIT ================= -->
     <section class="visit" id="visit">
       <div class="container">
         <div class="section-head" data-reveal>
@@ -267,7 +290,7 @@
         </div>
         <div class="visit-grid" data-reveal>
           <div class="visit-block">
-            <h3>მისამართი</h3>
+            <h3><i class="fa-solid fa-location-dot"></i> მისამართი</h3>
             <address>თბილისი, ვერის ქუჩა 14<br />0162, საქართველო</address>
             <a
               class="visit-link"
@@ -276,7 +299,7 @@
             >
           </div>
           <div class="visit-block">
-            <h3>საათები</h3>
+            <h3><i class="fa-regular fa-clock"></i> საათები</h3>
             <div class="visit-row">
               <span>ორშ – პარ</span><span>07:00–19:00</span>
             </div>
@@ -288,15 +311,57 @@
             </div>
           </div>
           <div class="visit-block">
-            <h3>კონტაქტი</h3>
+            <h3><i class="fa-solid fa-phone"></i> კონტაქტი</h3>
             <p>+995 32 200 00 00<br />hello@furne.ge</p>
-            <a class="visit-link" href="#">@furne.tbilisi →</a>
+            <a class="visit-link" href="#"
+              ><i class="fa-brands fa-instagram"></i> @furne.tbilisi →</a
+            >
           </div>
+        </div>
+
+        <div class="contact-form-wrap" data-reveal>
+          <div class="section-head section-head--flush">
+            <p class="eyebrow">კითხვა ან შეთავაზება</p>
+            <h2>დაგვიკავშირდეთ</h2>
+          </div>
+          <form class="contact-form" action="#" method="post">
+            <div class="form-row">
+              <label for="name">სახელი</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="თქვენი სახელი"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="email">ელფოსტა</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="form-row form-row--full">
+              <label for="message">შეტყობინება</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="დაგვიწერეთ თქვენი კითხვა ან შეთავაზება..."
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <i class="fa-solid fa-paper-plane"></i> გაგზავნა
+            </button>
+          </form>
         </div>
       </div>
     </section>
 
-    <!-- ================= FOOTER ================= -->
     <footer class="footer">
       <div class="container">
         <div class="footer-top">
@@ -317,9 +382,15 @@
             </div>
             <div class="footer-col">
               <h4>გვითვალისწინეთ</h4>
-              <a href="https://www.instagram.com/">Instagram</a>
-              <a href="https://www.facebook.com/">Facebook</a>
-              <a href="https://www.tiktok.com/en/">TikTok</a>
+              <a href="https://www.instagram.com/"
+                ><i class="fa-brands fa-instagram"></i> Instagram</a
+              >
+              <a href="https://www.facebook.com/"
+                ><i class="fa-brands fa-facebook"></i> Facebook</a
+              >
+              <a href="https://www.tiktok.com/en/"
+                ><i class="fa-brands fa-tiktok"></i> TikTok</a
+              >
             </div>
           </div>
         </div>
